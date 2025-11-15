@@ -1,0 +1,34 @@
+# Python Projects
+
+This repository contains three Python projects demonstrating automation, API usage, and working with external data.
+
+## 📌 Projects Included
+
+### 1. LinkedIn Apply Bot
+- Automates job applications on LinkedIn using Selenium.
+- Demonstrates browser automation, element handling, and web scraping.
+
+### 2. Flight Deals Tracker
+- Uses external APIs and Sheety.
+- Tracks flight prices and updates data dynamically.
+- Sends alerts when flight prices drop.
+
+### 3. Rain Alert App
+- Uses weather API to check rain forecast.
+- Sends SMS/notification if rain is expected.
+
+---
+
+### 🛡️ Security Notice
+All API keys and sensitive data are stored in `.env` files and **ignored using `.gitignore`**.
+
+---
+
+### 🚀 Skills Demonstrated
+- Python OOP
+- Automation (Selenium)
+- API integration
+- Data handling
+- JSON
+- Error handling
+- Environment variables
