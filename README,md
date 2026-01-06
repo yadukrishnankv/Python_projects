@@ -1,30 +1,34 @@
 # Python Projects
 
-This repository contains three Python projects demonstrating automation, API usage, and working with external data.
+This repository contains four Python projects demonstrating automation, API usage, and working with external data.
 
-## 📌 Projects Included
+ 📌 Projects Included
 
-### 1. LinkedIn Apply Bot
+1. LinkedIn Apply Bot
 - Automates job applications on LinkedIn using Selenium.
 - Demonstrates browser automation, element handling, and web scraping.
 
-### 2. Flight Deals Tracker
+2. Flight Deals Tracker
 - Uses external APIs and Sheety.
 - Tracks flight prices and updates data dynamically.
 - Sends alerts when flight prices drop.
 
-### 3. Rain Alert App
-- Uses weather API to check rain forecast.
-- Sends SMS/notification if rain is expected.
+3. Rain Alert App
+Uses weather API to check rain forecast.
+Sends SMS/notification if rain is expected.
+
+4.Spotify Time Machine (Python, Flask, BeautifulSoup, Spotify API) 
+Developed a Flask application that scrapes historical Billboard Hot 100 data using BeautifulSoup. 
+Integrated the Spotify API to automatically search for matched tracks and generate custom playlists. 
 
 ---
 
-### 🛡️ Security Notice
+🛡️ Security Notice
 All API keys and sensitive data are stored in `.env` files and **ignored using `.gitignore`**.
 
 ---
 
-### 🚀 Skills Demonstrated
+Skills Demonstrated
 - Python OOP
 - Automation (Selenium)
 - API integration
