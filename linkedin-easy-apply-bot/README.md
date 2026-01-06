@@ -10,7 +10,7 @@ The application leverages Selenium WebDriver for browser automation and Flask to
 
 A screen-recorded demonstration showcasing real-time automated job applications is available below:
 
-🔗 Demo Video: https://youtu.be/wSCc-34s-AQ
+🔗 Demo Video: https://youtu.be/pibSO-FgZIE?si=ulYNvBbjsMsdLp89
 
 🚀 Key Features
 
