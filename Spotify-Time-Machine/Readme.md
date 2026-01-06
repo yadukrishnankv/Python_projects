@@ -9,7 +9,7 @@ It’s nostalgia, automated.
 🎥 See it in Action
 Watch a quick demo of how it works here:
 
-
+https://youtu.be/cE-hXqZPWKI?si=ADWTQ3YnBCN5rN0X
 
 ⚙️ How It Works Under the Hood
 It looks simple on the front end, but there's some cool Python logic happening backstage:
