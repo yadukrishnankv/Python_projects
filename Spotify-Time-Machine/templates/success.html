@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #191414; color: white; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+        .container { text-align: center; max-width: 600px; }
+        .btn-spotify { background-color: #1DB954; color: white; padding: 15px 30px; border-radius: 50px; font-size: 1.2rem; text-decoration: none; font-weight: bold; }
+        .btn-spotify:hover { background-color: #1ed760; color: white; }
+
+        /* New Styles for the Skipped List */
+        .skipped-box {
+            background-color: #282828;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+            max-height: 200px; /* Limits height so page doesn't get too long */
+            overflow-y: auto;  /* Adds scrollbar if list is long */
+            border: 1px solid #b3b3b3;
+        }
+        .skipped-box h5 { color: #ff6b6b; font-weight: bold; margin-bottom: 15px; }
+        .skipped-box ul { padding-left: 20px; color: #b3b3b3; }
+        .skipped-box li { margin-bottom: 5px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="display-4">Success! 🎉</h1>
+    <p class="lead mb-4">Your playlist <strong>{{ name }}</strong> has been created.</p>
+
+    <a href="{{ playlist_url }}" target="_blank" class="btn btn-spotify">Open in Spotify</a>
+
+    {% if skipped_songs %}
+    <div class="skipped-box">
+        <h5>⚠️ {{ skipped_songs|length }} Songs Not Found:</h5>
+        <ul>
+            {% for song in skipped_songs %}
+                <li>{{ song }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <br><br>
+    <a href="/" class="text-white-50">Go Back</a>
+</div>
+
+</body>
+</html>
