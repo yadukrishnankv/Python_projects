@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Easy Apply Bot</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            margin: 60px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background: #0a66c2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #084a8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>LinkedIn Easy Apply</h2>
+        <form method="POST">
+            <input type="email" name="email" placeholder="LinkedIn Email" required>
+            <input type="password" name="password" placeholder="LinkedIn Password" required>
+            <input type="text" name="job_title" placeholder="Job Title (e.g Backend Engineer)" required>
+            <input type="text" name="location" placeholder="Location (e.g Bangalore, India)" required>
+            <input type="text" name="phone" placeholder="Phone Number (e.g 9123456789)" required>
+
+            <button type="submit">Start Applying</button>
+        </form>
+        {% if message %}
+    <p style="color: green; margin-top: 15px; font-weight: bold;">
+        {{ message }}
+    </p>
+{% endif %}
+
+    </div>
+</body>
+</html>
